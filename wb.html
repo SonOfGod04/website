@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Features Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .dropdown-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Features Demo</h1>
+        
+        <h2>Dropdown Menu</h2>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Click me</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+            </div>
+        </div>
+
+        <h2>Display Information</h2>
+        <p id="info">Click a button to display information here.</p>
+        <button onclick="displayInfo('Button 1 clicked')">Button 1</button>
+        <button onclick="displayInfo('Button 2 clicked')">Button 2</button>
+        <button onclick="displayInfo('Button 3 clicked')">Button 3</button>
+    </div>
+
+    <script>
+        // JavaScript for the dropdown
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+
+        // JavaScript for displaying information
+        function displayInfo(message) {
+            var infoElement = document.getElementById("info");
+            infoElement.textContent = message;
+        }
+    </script>
+</body>
+</html>
