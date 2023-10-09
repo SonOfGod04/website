@@ -59,6 +59,7 @@ pathy==0.10.2
 patsy==0.5.3
 pep8==1.7.1
 Pillow==9.4.0
+PIL
 plotly==5.16.1
 ply==3.11
 preshed==3.0.8
@@ -90,6 +91,7 @@ spacy-loggers
 joblib
 srsly
 streamlit
+streamlit_lottie
 streamlit-ace
 TBB
 tensorboard
