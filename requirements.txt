@@ -95,7 +95,6 @@ srsly
 streamlit==1.25.0
 streamlit-ace==0.1.1
 streamlit-lottie==0.0.5
-st_lottie
 TBB
 tensorboard
 tensorboard-data-server
