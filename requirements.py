@@ -20,6 +20,7 @@ cssselect==1.1.0
 cymem==2.0.7
 daal4py==2023.1.1
 datashape
+Image
 et-xmlfile==1.1.0
 fastai==2.7.12
 fastcore==1.5.29
@@ -93,6 +94,7 @@ srsly
 streamlit
 streamlit_lottie
 streamlit-ace
+st_lottie
 TBB
 tensorboard
 tensorboard-data-server
