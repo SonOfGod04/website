@@ -55,11 +55,9 @@ st.write("---")
 # My Projects
 st.header("My Projects")
 st.write("##")
-image_column, text_column = st.columns((1, 2))
 
-with image_column:
-    st.image(img_contact_form_url)  # Fixed variable name
-with text_column:
+with st.columns((1, 2)):
+    st.image(img_contact_form_url)
     st.subheader("Easily Deploy Your Expertly Built Models")
     st.write(
         """
