@@ -56,8 +56,12 @@ st.write("---")
 st.header("My Projects")
 st.write("##")
 
-with st.columns((1, 2)):
+# Define the first column
+col1, col2 = st.columns(2)
+
+with col1:
     st.image(img_contact_form_url)
+with col2:
     st.subheader("Easily Deploy Your Expertly Built Models")
     st.write(
         """
@@ -68,13 +72,12 @@ with st.columns((1, 2)):
     )
     st.markdown("[See Samples...](https://student-performance-01.streamlit.app)")
 
-st.write("---")
+# Define the next set of columns similarly
+col3, col4 = st.columns(2)
 
-image_column, text_column = st.columns((1, 2))
-
-with image_column:
+with col3:
     st.image(img_model)
-with text_column:
+with col4:
     st.subheader("Craft a Data Science Project that Speaks for Itself")
     st.write(
         """
@@ -83,13 +86,12 @@ with text_column:
     )
     st.markdown("[See Samples...](https://github.com/SonOfGod04/Network-Intrusion-KDDP-dataset/blob/main/KDDCUP99N.ipynb)")
 
-st.write("---")
+# Define the final set of columns similarly
+col5, col6 = st.columns(2)
 
-image_column, text_column = st.columns((1, 2))
-
-with image_column:
+with col5:
     st.image(img_Analysis)
-with text_column:
+with col6:
     st.subheader("Detailed Data Analysis Project")
     st.write(
         """
@@ -97,6 +99,8 @@ with text_column:
         """
     )
     st.markdown("[See Samples...](https://github.com/SonOfGod04/Student-Performance/blob/main/Student_Prediction12.ipynb)")
+
+
 
 # Contact
 st.write("----")
