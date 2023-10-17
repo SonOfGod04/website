@@ -16,9 +16,9 @@ def load_lottieurl(url):
     return r.json()
 
 lottie_coding = load_lottieurl("https://lottie.host/f77e68a2-c9d7-4645-bb09-454921abdc29/haQmAzZdf4.json")
-img_contact_form1 = Image.open("Pictures\Screenshots\Screenshot (120).png")
-img_model = Image.open("Pictures\Screenshots\Screenshot (127).png")
-img_Analysis = Image.open("Pictures\Screenshots\Screenshot (129).png")
+img_contact_form_url = 'https://github.com/SonOfGod04/website/blob/main/Screenshot%20(120).png?raw=true'
+img_model = 'https://github.com/SonOfGod04/website/blob/main/Screenshot%20(127).png?raw=true'
+img_Analysis = 'https://github.com/SonOfGod04/website/blob/main/Screenshot%20(129).png?raw=true'
 img_computer_vision = Image.open("Pictures\Screenshots\Screenshot (123).png")
 
 # Header section
